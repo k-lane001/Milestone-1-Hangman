@@ -12,6 +12,10 @@ h1 {
     display: flex;
     flex-direction: row;
 }
+#gallows {
+    width: 50%;
+
+}
 img {
     display: block;
     margin-left: auto;
@@ -24,11 +28,15 @@ img {
     flex-direction: row;
     justify-content: center;
 }
+label {
+    font-family: 'Creepster', cursive;
+    font-size: 2em;
+}
+
 button {
     font-size: 2.5em;
     background-color: #43C76A;
-    margin-left:2%;
+    margin-left: 2%;
     margin-right: 2%;
-    height: 10%;
-
+    height: 20%;
 }
