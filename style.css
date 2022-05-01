@@ -25,10 +25,16 @@ img {
 
 #controls {
     display: flex;
-    flex-direction: row;
+    flex-flow: column;
     justify-content: center;
 }
+
+#wordField {
+    font-size: 4em;
+}
+
 label {
+    /* display: block; */
     font-family: 'Creepster', cursive;
     font-size: 2em;
 }
