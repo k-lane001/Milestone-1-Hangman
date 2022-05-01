@@ -1,10 +1,30 @@
 
+//Image Loop Function
+function nextImage() {
+    for(var i=0; i<imgArray.length; i++) {
+        imgArray[i];
+        } 
+}
+//add image to html
 document.body.onload = addElement;
 
 function addElement() {
     const img = document.createElement('img');
     img.src = './assets/images/Start.jpeg';
     document.getElementById('gallows').appendChild(img);
+}
+
+const start = document.getElementById('start');
+const reset = document.getElementById('reset');
+//button event listeners
+start.addEventListener('click', playGame);
+reset.addEventListener('click', resetGame);
+
+function playGame() {
+    console.log('hello');
+}
+function resetGame() {
+    console.log('try again')
 }
 
 // Image Array
@@ -46,11 +66,5 @@ imgArray[10].src = './assets/images/End.png';
 //Names Array
 const names = ['freddy', 'jason', 'michael', 'pinhead', 'pennywise', 'chucky', 'norman', 'hannibal', 'jack', 'ghostface', 'frankenstein', 'dracula', 'mummy', ];
 
-//Image Loop Function
-function nextImage() {
-    for(var i=0; i<imgArray.length; i++) {
-        imgArray[i];
-        }
-}
 
 
