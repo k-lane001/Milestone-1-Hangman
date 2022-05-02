@@ -6,17 +6,43 @@ function nextImage() {
         } 
 }
 
+// function nextWord() {
+//     for(var i=0; i<names.length; i++) {
+//         newWord += names[i];
+//         }
+// };
+
 //Gameplay functions
+
+// Shuffle Names function
 function playGame() {
-    var randomItem = names[Math.floor(Math.random()*names.length)];
-    var wordField = document.createElement('div');
-    wordField.textContent = randomItem;
-    document.getElementById('wordField').appendChild(wordField);
-    console.log(wordField.textContent);
+    document.getElementById('message').textContent = 'New Game!';
+    let newWord = names[0];
+    let img = imgArray[0];
+    let score = 0;
+    let splitWord = newWord.split('');
+//need to rework splitWord into 'blanks'... '_' * splitWord.length
+    let hiddenWord = document.getElementById('hiddenWord');
+    hiddenWord.textContent = splitWord.join(' ');//this is just putting the actual word in right now
+
+    console.log(hiddenWord.textContent);//this is for texting purposes *** to be removed
+
+    // if (input == )
+
+
+    
+
+//set blanks content equal to length of hiddenWord.textContent
+
+
+
+
 }
 
 function resetGame() {
     let score = 0;
+    msg.textContent = 'New Game!';
+
     console.log('try again');
     playGame();
 }
@@ -29,13 +55,15 @@ function addElement() {
     img.src = './assets/images/Start.jpeg';
     document.getElementById('gallows').appendChild(img);
 }
-//Variables
-const start = document.getElementById('start');
-const reset = document.getElementById('reset');
 
-//button event listeners
-start.addEventListener('click', playGame);
-reset.addEventListener('click', resetGame);
+//variables
+// const msg = document.getElementById('message');
+const score = document.getElementById('score');
+//Event Listeners
+document.getElementById('start').addEventListener('click', playGame);
+document.getElementById('reset').addEventListener('click', resetGame);
+
+
 
 
 // Image Array

@@ -20,14 +20,22 @@
 <!-- Gallows Image goes here -->
         </div>
 
-        <div id="controls">
-            <div id='wordField'></div>
+        <div id="display">
+            <div id="score"></div>
+            <div id="message"></div>
+            <div id='hiddenWord'></div>
             <br>
+        </div>
+        <div id="console">
+<!-- Player Input -->
             <form>
                 <label for="letters">Enter a letter</label>
-                <input type="text" id="letters2">
+                <input type="text" id="input" maxlength="1" size="3">
             </form>
+            <br>
+<!-- Buttons -->
             <button id="start">Play</button>
+            <br>
             <button id="reset">Reset</button>
         </div>
     </div>
